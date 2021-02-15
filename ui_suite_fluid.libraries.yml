@@ -1,0 +1,21 @@
+fluid:
+  remote: https://www.engie.design/fluid-design-system/
+  license:
+    name: EPL-2.0
+    gpl-compatible: false
+  js: 
+    "https://cdn.jsdelivr.net/npm/@engie-group/fluid-design-system@latest/lib/fluid-design-system.js": { minified: true }
+    "https://cdn.jsdelivr.net/npm/@engie-group/fluid-design-system@latest/lib/auto-init.js": { minified: true }
+  css:
+    theme:
+      "https://cdn.jsdelivr.net/npm/@engie-group/fluid-design-system@latest/lib/fluid-design-system.css": { minified: true }
+
+mdi:
+  remote: https://google.github.io/material-design-icons/
+  license:
+    name: Apache License Version 2.0
+    gpl-compatible: true
+  css:
+    theme:
+      "https://fonts.googleapis.com/icon?family=Material+Icons": {}
+

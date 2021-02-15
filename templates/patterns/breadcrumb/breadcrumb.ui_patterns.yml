@@ -1,0 +1,13 @@
+breadcrumb:
+  label: Breadcrumb
+  description: Breadcrumbs indicate the current page's location within a navigational hierarchy. https://www.engie.design/fluid-design-system/components/breadcrumb/
+  fields:
+    items:
+      type: render
+      label: Items
+      preview:
+        - text: Home
+          url: "#"
+        - text: Library
+          url: "#"
+        - text: Data

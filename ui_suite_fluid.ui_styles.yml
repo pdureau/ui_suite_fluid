@@ -1,0 +1,175 @@
+# https://www.engie.design/fluid-design-system/css-utilities/borders/#border
+borders_border:
+  label: Border
+  description: Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time.
+  options:
+    border: Additive All
+    border-top: Additive Top
+    border-right: Additive Right
+    border-bottom: Additive Bottom
+    border-left: Additive Left
+    border-0: Subtractive All
+    border-top-0: Subtractive Top
+    border-right-0: Subtractive Right
+    border-bottom-0: Subtractive Bottom
+    border-left-0: Subtractive Left
+  previewed_with:
+    - p-2
+    - bg-light
+
+# https://www.engie.design/fluid-design-system/css-utilities/borders/#border-color
+borders_border_color:
+  label: Border color
+  description: Change the border color using utilities built on our theme colors.
+  options:
+    border-primary: Primary
+    border-success: Success
+    border-danger: Danger
+    border-warning: Warning
+    border-light: Light
+    border-white: White
+  previewed_with:
+    - border
+    - p-2
+    - bg-light
+
+# https://www.engie.design/fluid-design-system/css-utilities/borders/#border-radius
+borders_border_radius:
+  label: Border radius
+  description: Add classes to an element to easily round its corners.
+  options:
+    rounded: Rounded
+    rounded-top: Rounded Top
+    rounded-right: Rounded Right
+    rounded-bottom: Rounded Bottom
+    rounded-left: Rounded Left
+    rounded-circle: Rounded Circle
+    rounded-0: Rounded Susbtrative
+  previewed_with:
+    - border
+    - p-2
+    - bg-light
+
+# https://www.engie.design/fluid-design-system/css-utilities/colors/#background-color
+colors_background_color:
+  label: Background color
+  description: Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes
+  options:
+    bg-white: White
+    bg-blue-corporate: Blue Corporate
+    bg-blue-allports: Blue Allports
+    bg-blue-venice: Blue Venice
+    bg-green-java: Green Java
+    bg-green-pine: Green Pine
+    bg-green: Green
+    bg-orange: Orange
+    bg-red: Red
+    bg-blue-bigstone: Blue Bigstone
+    bg-blue-rhino: Blue Rhino
+    bg-green-fun: Green Fun
+    bg-green-riogrande: Green Riogrande
+    bg-yellow: Yellow
+    bg-purple: Purple
+    bg-violet: Violet
+    bg-violet-eggplant: Violet Eggplant
+    bg-cerise: Cerise
+    bg-primary: Primary
+    bg-success: Success
+    bg-danger: Danger
+    bg-warning: Warning
+    bg-light: Light
+  previewed_with:
+    - border
+    - p-2
+
+# https://www.engie.design/fluid-design-system/css-utilities/colors/#color
+colors_color:
+  label: Color
+  description: Convey meaning through color with a handful of color utility classes. Includes support for styling links with hover states, too.
+  options:
+    text-white: White
+    text-blue-corporate: Blue Corporate
+    text-blue-allports: Blue Allports
+    text-blue-venice: Blue Venice
+    text-green-java: Green Java
+    text-green-pine: Green Pine
+    text-green: Green
+    text-orange: Orange
+    text-red: Red
+    text-blue-bigstone: Blue Bigstone
+    text-blue-rhino: Blue Rhino
+    text-green-fun: Green Fun
+    text-green-riogrande: Green Riogrande
+    text-yellow: Yellow
+    text-purple: Purple
+    text-violet: Violet
+    text-violet-eggplant: Violet Eggplant
+    text-cerise: Cerise
+    text-muted: Muted
+    text-primary: Primary
+    text-success: Success
+    text-danger: Danger
+    text-warning: Warning
+    text-light: Light
+
+# https://www.engie.design/fluid-design-system/css-utilities/text/#font-weight-and-italics
+text_font_weight:
+  label: Font weight
+  description: Quickly change the weight (boldness) of text.
+  options:
+    font-weight-bold: Bold
+    font-weight-normal: Normal
+    font-weight-light: Light
+
+# https://www.engie.design/fluid-design-system/css-utilities/text/#font-weight-and-italics
+text_font_italics:
+  label: Font italics
+  description: Quickly italicize text.
+  options:
+    font-italic: Italic
+
+# https://getbootstrap.com/docs/4.4/utilities/spacing/#horizontal-centering
+spacing_horizontal_centering:
+  label: Horizontal centering
+  description: "An .mx-auto class for horizontally centering fixed-width block level content—that is, content that has display: block and a width set—by setting the horizontal margins to auto."
+  options:
+    mx-auto: Horizontal centering
+
+# https://www.engie.design/fluid-design-system/css-utilities/text/#text-alignment
+# TODO: Responsive
+text_text_alignment:
+  label: Text alignment
+  description: Easily realign text to components with text alignment classes.
+  options:
+    text-justify: Justify
+    text-left: Left
+    text-center: Center
+    text-right: Right
+  previewed_with:
+    - border
+    - p-2
+    - bg-light
+
+# https://www.engie.design/fluid-design-system/css-utilities/text/#text-transform
+text_text_transform:
+  label: Text transform
+  description: Transform text in components with text capitalization classes.
+  options:
+    text-lowercase: Lowercase
+    text-uppercase: Uppercase
+    text-capitalize: Capitalize
+
+# https://www.engie.design/fluid-design-system/css-utilities/text/#text-scale
+text_text_scale:
+  label: Text scale
+  options:
+    t-peta: Peta
+    t-tera: Tera
+    t-giga: Giga
+    t-mega: Mega
+    t-kilo: Kilo
+    t-hecto: Hecto
+    t-deca: Deca
+    t-base: Base
+    t-deci: Deci
+    t-centi: Centi

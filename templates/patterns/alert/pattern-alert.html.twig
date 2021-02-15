@@ -1,0 +1,27 @@
+{% if variant != '' and variant|lower != 'default' %}
+  {% set attributes = attributes.addClass('nj-alert--' ~ variant|lower|replace({'_': '-'})) %}
+{% endif %}
+
+{% set icon_mapping = {
+  'primary': 'notification_important',
+  'success': 'check',
+  'warning': 'warning',
+  'danger': 'error',
+  'light': 'notification_important'
+} %}
+
+<div{{ attributes.addClass('nj-alert').setAttribute('role', alert) }}>
+
+  {% if dismissible %}
+    <button type="button" class="nj-close nj-alert__close" data-dismiss="alert" aria-label="Close">
+      <i class="material-icons nj-alert__close-icon">close</i>
+    </button>
+  {% endif %}
+  <i class="material-icons nj-alert__icon">{{ icon_mapping[variant] }}</i>
+  <div>
+  {% if heading %}
+  <span class="nj-alert__title">{{ heading }}</span>
+  {% endif %}
+  {{ message }}
+  </div>
+</div>

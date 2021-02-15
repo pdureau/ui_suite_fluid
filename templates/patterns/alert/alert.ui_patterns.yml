@@ -1,0 +1,31 @@
+alert:
+  label: Alert
+  description: Alert provide contextual feedback messages for typical user actions. A handful of flexible alert messages are available. https://www.engie.design/fluid-design-system/components/alert/
+  variants:
+    primary:
+      label: Primary
+    success:
+      label: Success
+    danger:
+      label: Danger
+    warning:
+      label: Warning
+    light:
+      label: Light
+  settings:
+    dismissible:
+      type: boolean
+      label: Dismissible?
+      description: It’s possible to dismiss any alert inline
+      preview: True
+  fields:
+    heading:
+      type: text
+      label: Heading
+      description: The alert heading. Optional.
+      preview: Well done!
+    message:
+      type: render
+      label: Message
+      description: The alert message.
+      preview: " A simple alert—check it out! "

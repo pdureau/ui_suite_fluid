@@ -1,0 +1,45 @@
+button:
+  label: Button
+  description: Buttons are action elements, they allow users to interact with the product. They can be of different sizes, colors and status.
+  variants:
+    primary:
+      label: Primary
+      description: The primary button is plain with a background.
+    success:
+      label: Success
+    danger:
+      label: Danger
+    warning:
+      label: Warning
+    light:
+      label: Light
+    outline_primary:
+      label: Outline Primary ("Secondary")
+      description: For the secondary button, the design system provides a second type of button called outline.
+    outline_success:
+      label: Outline Success
+    outline_danger:
+      label: Outline Danger
+    outline_warning:
+      label: Outline Warning
+    outline_light:
+      label: Outline Light
+    primary__sm:
+      label: Small Primary
+    primary__lg:
+      label: Large Primary
+    primary__block:
+      label: Primary Block
+    outline_primary__block:
+      label: Outline Primary ("Secondary") Block
+  fields:
+    label:
+      type: text
+      label: Label
+      description: The button label
+      preview: Submit
+    url:
+      type: text
+      label: URL
+      description: The button URL. Optional.
+      preview: http://example.com

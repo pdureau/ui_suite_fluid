@@ -1,0 +1,27 @@
+{% if variant != '' and variant|lower != 'default' %}
+  {% set attributes = attributes.addClass('nj-card--' ~ variant|lower|replace({'_': '-'})) %}
+{% endif %}
+
+<a{{ attributes.addClass('nj-card') }}>
+
+ {% if variant != 'cover' %}
+  {{ image }}
+  <div class="nj-card__body {% if variant == 'horizontal' %}d-flex{% endif %}">
+    {% if details %}<p class="nj-card__details">{{ details }}</p>{% endif %}
+    {% if title %}<h4 class="nj-card__title">{{ title }}</h4>{% endif %}
+    {% if variant != 'horizontal' %}{{ body }}{% endif %}
+    {% if date %}<div class="nj-card__date">{{ date }}</div>{% endif %}
+  </div>
+  {% endif %}
+  
+ {% if variant == 'cover' %}
+  <div class="nj-card__body">
+    <div class="nj-card__overlay">
+      {% if title %}<h4 class="nj-card__title">{{ title }}</h4>{% endif %}
+       <i class="material-icons md--white">arrow_forward</i>
+      {% if body %}<div class="nj-card__description">{{ body }}</div>{% endif %}
+    </div>
+  </div>
+  {% endif %}
+
+</a>

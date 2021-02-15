@@ -1,0 +1,41 @@
+card:
+  label: "Card"
+  description: "Cards help bring hierarchy and visual consistency to the information displayed on a page, especially when the content is heterogenous. They are excellent ways to display rich media content like images or videos or to highlight action-required elements. https://www.engie.design/fluid-design-system/components/cards/"
+  variants:
+    default:
+      label: Default
+    border:
+      label: Border
+    horizontal:
+      label: Horizontal
+    cover:
+      label: Cover
+  fields:
+    image:
+      type: "render"
+      label: "Image"
+      description: "Card image."
+      preview:
+        - theme: "image"
+          uri: "assets/img/img-generic.jpg"
+          alt: "Card image cap"
+    details:
+      type: "text"
+      label: "Text"
+      description: "Card details. Plain text. Not used in cover variant."
+      preview: "Category | Date | Author."
+    title:
+      type: "text"
+      label: "Title"
+      description: "Card title. Plain text."
+      preview: "Card title"
+    body:
+      type: "render"
+      label: "Body"
+      description: "Card body. Not used in horizontal variant."
+      preview: "Some quick example text to build on the card title and make up the bulk of the card's content."
+    date:
+      type: "text"
+      label: "Date"
+      description: "Card date. Plain text. Not used in cover variant."
+      preview: "Updated 24/01/2017"
